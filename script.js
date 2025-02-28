@@ -8,6 +8,23 @@ function appendNumber(number) {
     display.value = currentInput;
 }
 
+function appendDecimal() {
+    if (currentInput.indexOf('.') === -1) {
+        currentInput += '.';
+        display.value = currentInput;
+    }
+}
+
+function toggleSign() {
+    currentInput = (parseFloat(currentInput) * -1).toString();
+    display.value = currentInput;
+}
+
+function appendPercentage() {
+    currentInput = (parseFloat(currentInput) / 100).toString();
+    display.value = currentInput;
+}
+
 function setOperation(op) {
     if (currentInput === '') return;
     if (previousInput !== '') {
