@@ -44,21 +44,21 @@ button {
 }
 
 .btn-dark {
-    background-color: #2e2e33;
+    background-color: #333333;
     color: #ffffff;
 }
 
 .btn-dark:hover {
-    background-color: #3e3e44;
+    background-color: #444444;
 }
 
 .btn-gray {
-    background-color: #4c4c52;
+    background-color: #555555;
     color: #ffffff;
 }
 
 .btn-gray:hover {
-    background-color: #5c5c62;
+    background-color: #666666;
 }
 
 .btn-orange {
@@ -72,10 +72,10 @@ button {
 
 .btn-dark-wide {
     grid-column: span 2;
-    background-color: #2e2e33;
+    background-color: #333333;
     color: #ffffff;
 }
 
 .btn-dark-wide:hover {
-    background-color: #3e3e44;
+    background-color: #444444;
 }
