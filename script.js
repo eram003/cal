@@ -6,7 +6,7 @@ let operation = '';
 function appendNumber(number) {
     currentInput += number;
     display.value = currentInput;
-    if (currentInput === '003') window.location.href = 'https://youtu.be/vBdiIJ4c9L4';
+    if (currentInput === '911') window.location.href = 'https://youtu.be/8lifVcl1jgg';
 }
 
 function appendDecimal() {
@@ -17,12 +17,12 @@ function appendDecimal() {
 }
 
 function toggleSign() {
-    currentInput = -currentInput;
+    currentInput = (-currentInput).toString();
     display.value = currentInput;
 }
 
 function appendPercentage() {
-    currentInput = currentInput / 100;
+    currentInput = (currentInput / 100).toString();
     display.value = currentInput;
 }
 
@@ -55,7 +55,7 @@ function calculateResult() {
         default:
             return;
     }
-    currentInput = result;
+    currentInput = result.toString();
     display.value = result;
     operation = '';
     previousInput = '';
