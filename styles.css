@@ -9,16 +9,11 @@ body {
     color: #fff;
 }
 
-.calculator-container {
-    text-align: center;
-}
-
 .calculator {
     border-radius: 15px;
     background-color: #1e1e1e;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
 }
 
 #display {
@@ -46,12 +41,17 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
     color: #fff;
 }
 
 button:active {
     transform: scale(0.95);
+    box-shadow: 0 4px #000;
+}
+
+button:hover {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 .btn-dark {
