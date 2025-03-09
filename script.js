@@ -6,7 +6,12 @@ let operation = '';
 function appendNumber(number) {
     currentInput += number;
     display.value = currentInput;
-    if (currentInput === '911') window.location.href = 'https://youtu.be/8lifVcl1jgg';
+
+    if (currentInput === '911') {
+        window.location.href = 'https://youtu.be/8lifVcl1jgg';
+    } else if (currentInput === '003') {
+        window.location.href = 'https://youtu.be/vBdiIJ4c9L4';
+    }
 }
 
 function appendDecimal() {
@@ -59,7 +64,12 @@ function calculateResult() {
     display.value = result;
     operation = '';
     previousInput = '';
-    if (result === 911) window.location.href = 'https://youtu.be/8lifVcl1jgg';
+
+    if (result === 911) {
+        window.location.href = 'https://youtu.be/8lifVcl1jgg';
+    } else if (currentInput === '003') {
+        window.location.href = 'https://youtu.be/vBdiIJ4c9L4';
+    }
 }
 
 function clearDisplay() {
